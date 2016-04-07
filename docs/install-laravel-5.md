@@ -361,8 +361,8 @@ $ ssh git@deploy.eu2.frbit.com secrets your-app mysql.password
 Now open up a [tunnel](/mysql#toc-shell-tunnel-mysql) and run in another terminal window your migration or seed commands:
 
 ```bash
-$ DB_PASSWORD="your database password" php artisan migrate --database=mysql-tunnel
-$ DB_PASSWORD="your database password" php artisan db:seed --database=mysql-tunnel
+$ DB_PASSWORD="your database password" php artisan migrate --database="mysql-tunnel"
+$ DB_PASSWORD="your database password" php artisan db:seed --database="mysql-tunnel"
 ```
 
 ### Persistent storage
